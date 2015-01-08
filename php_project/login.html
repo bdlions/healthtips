@@ -13,19 +13,257 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <script type="text/javascript" src="<?php echo base_url(); ?>resources/js/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>resources/js/bootstrap.min.js"></script>
-        <link type='text/css' rel="stylesheet" href="<?php echo base_url(); ?>resources/css/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>resources/css/styles.css"/>
+        <script type="text/javascript" src="resources/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+        <link type='text/css' rel="stylesheet" href="resources/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="resources/css/styles.css"/>
         <title>Come Bien</title>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row">
+
+        <!--HEADER-->
+        <div class="container-fluid" style="padding-top: 10px; background-color: #8EC640; color: white">
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-2">
+                            <div class="pull-left">
+                                <img class="img-responsive" src="resources/images/logo.png">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
                 
-                <!--ADD YOUR CODES HERE-->
-                
+                <div class="col-md-offset-3 col-md-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span style="font-weight: bold;">Email:</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="email" class="" style="color: black; height: 20px; width: 170px;">
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="checkbox">
+                            <span style="font-weight: bold; line-height: 22px;">Remember me</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span style="font-weight: bold;">Password:</span>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type ="password" class="" style="color: black; height: 20px;width: 170px;">
+                        </div>
+                        <div class="col-md-12">
+                            <a style="font-weight: bold; color:white;" href="#">Forgot your password?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"> 
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span >&nbsp;</span>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" style="font-size: 10px; font-weight: bold; height: 20px; width: 60px;; border: 0px; padding: 3px; background-color: white; color: #8EC640;">Sign In</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <!--BODY-->
+        <div class="container-fluid" style="background-color: #F1F1F1;">
+            <div class="row form-group">
+                <div class="col-md-12"></div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-offset-7 col-md-5">
+                    <span style="font-size: 25px; font-weight: bold; color: #8EC640;">Sign Up</span>
+                </div>
+            </div>
+                
+            <div class="row form-group">
+            <div class="col-md-7">
+                <img class="img-responsive" src="resources/images/Food.jpg">
+                <div class="row form-group"></div>
+            </div>
+            <div class="col-md-5">
+                <div class="row form-group">
+                    <div class="col-md-6 col-xs-6">
+                        <input type ="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <input type ="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="row form-group"> 
+                    <div class="col-md-12">
+                        <input type ="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="row form-group"> 
+                    <div class="col-md-12">
+                        <input type ="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="row form-group"> 
+                    <div class="col-md-12">
+                        <input type ="password" class="form-control" placeholder="Re-peated password">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12"> 
+                        <span style="color: #8EC640; font-weight: bold; font-size: 15px;">Birthday</span>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 col-xs-4">
+                        <div class="pages_type_add_form_input">
+                            <select name="day" class="form-control">
+                                <option value="0">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="pages_type_add_form_input">
+                            <select name="month" class="form-control">
+                                <option value="0">Month</option>
+                                <option value="1">Jan</option>
+                                <option value="2">Feb</option>
+                                <option value="3">Mar</option>
+                                <option value="4">Apr</option>
+                                <option value="5">May</option>
+                                <option value="6">Jun</option>
+                                <option value="7">Jul</option>
+                                <option value="8">Aug</option>
+                                <option value="9">Sep</option>
+                                <option value="10">Oct</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dec</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="pages_type_add_form_input">
+                            <select name="year" class="form-control">
+                                <option value="0">Year</option>
+                                <option value="1">2015</option>
+                                <option value="2">2014</option>
+                                <option value="3">2013</option>
+                                <option value="4">2012</option>
+                                <option value="5">2011</option>
+                                <option value="6">2010</option>
+                                <option value="7">2009</option>
+                                <option value="8">2008</option>
+                                <option value="9">2007</option>
+                                <option value="10">2006</option>
+                                <option value="11">2005</option>
+                                <option value="12">2004</option>
+                                <option value="13">2003</option>
+                                <option value="14">2002</option>
+                                <option value="15">2001</option>
+                                <option value="16">2000</option>
+                                <option value="17">1999</option>
+                                <option value="18">1998</option>
+                                <option value="19">1997</option>
+                                <option value="20">1996</option>
+                                <option value="21">1995</option>
+                                <option value="22">1994</option>
+                                <option value="23">1993</option>
+                                <option value="24">1992</option>
+                                <option value="25">1991</option>
+                                <option value="26">1990</option>
+                                <option value="27">1989</option>
+                                <option value="28">1988</option>
+                                <option value="29">1987</option>
+                                <option value="30">1986</option>
+                                <option value="31">1985</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12"> 
+                        <span style="color: #8EC640; font-weight: bold; font-size: 15px;">Gender</span>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4">
+                        <select class="form-control">
+                            <option class="">
+                                Male
+                            </option>
+                            <option class="">
+                                Female
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <button id="btnSubmit" type="submit" class="btn button-custom" style="background-color: #B6DB49; color: white"><b>Sign Up</b></button>
+                    </div>
+                </div>
+                <div class="row form-group"></div>
+                <div class="row form-group"></div>
+            </div>
+        </div>
+
+</div>
+
+        <!--FOOTER-->
+
+        <div class="container-fluid" style="background-color: #8EC640; color: white">
+                <div class="col-md-offset-1 col-md-10">
+                    <div style="padding: 5px 0px 5px 0px;">
+                        About | Contact | Terms
+                    </div>
+                </div>
+        </div>
+
+
+
     </body>
 </html>
