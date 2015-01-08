@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 15, 2014, 4:05:42 PM
+    Author     : Tanveer
+*/
+
+.padding_horiz_thin
+{
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+}
+
+/*================================  SECTIONS  ================================*/
+#mm_friend_request {
+    display: inline-block;
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+    background-image: url('../images/fb_icons.png');
+    background-position: 0 -577px;
+}
+
+#mm_messages {
+    display: inline-block;
+    margin-right: 10px;
+    height: 35px;
+    width: 32px;
+    background-image: url('../images/fb_icons.png');
+    background-position: 0 -481px;
+}
+
+#mm_notification {
+    display: inline-block;
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+    background-image: url('../images/fb_icons.png');
+    background-position: 0 -958px;
+}
+
+
+/*================================  pagelets  ================================*/
+.comment_box{
+
+            }
+            .pagelet{
+                background-color: white;
+                padding: 15px;
+                margin-bottom: 1px;
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+            }
+            .pagelet_divider{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid lightgray;
+            }
+            .user_comment{
+                padding: 5px 0 5px 0; 
+            }
+
+            .ticker_friends{
+                background-color: #E9EAED;
+                padding: 10px;
+                font-size: 12px;
+                border-bottom: 1px solid lightgray;
+            }
+            .ticker_friends:hover{
+                cursor: pointer;
+                background-color: lightgrey;
+            }
+            .msg_friends{
+                background-color: white;
+                font-size: 12px;
+                padding: 10px;
+                border: 1px solid lightgray;
+            }
+            .msg_box,.msg_box_1{
+                background-color: white;
+                font-size: 12px;
+                padding: 10px;
+
+            }
+            .msg_friends:hover,.msg_box:hover{
+                cursor: pointer;
+                background-color: lightgrey;
+            }
+			.msg_text:hover{
+                cursor: pointer;
+                opacity: 0.7;
+            }
+            .divider_full{
+                border-top: 1px solid lightgray;
+            }
+            .divider_full,.divider_others{
+                padding: 10px;
+                border-left: 1px solid lightgray;
+                border-right: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+            }
+
