@@ -17,6 +17,9 @@ h3{
     color: darkgreen;
 }
 
+.alimentos_cards img{
+    padding-bottom: 5px;
+}
 .alimentos_cards span{
     color: darkgreen;
     width: 100%;
@@ -28,6 +31,8 @@ h3{
     box-shadow: 0 0 2px lightgreen;
     padding: 5px;
     font-size: 12px;
+    text-align: center;
+    font-weight: bold;
 }
 
 

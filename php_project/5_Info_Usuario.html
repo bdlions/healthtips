@@ -14,12 +14,13 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <script type="text/javascript" src="resources/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="resources/js/script.js"></script>
         <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
         <link type='text/css' rel="stylesheet" href="resources/css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="resources/css/styles.css"/>
         <title>Come Bien</title>
         <style>
-        .pagelet_divider{
+            .pagelet_divider{
                 margin-top: 15px;
                 margin-bottom: 15px;
                 border-bottom: 2px solid #FE7243;
@@ -37,104 +38,131 @@ and open the template in the editor.
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="row form-group">
-                    <div class="col-md-12"></div>
-                </div>
-            <div class="row form-group">
-                <div class="col-md-8 general_update" style="position: relative;">
-                    <span style="padding: 5px; font-size: 20px; color: #B6DB49; background-color: white; position: absolute; top: -20px; left: 20px;"><b>General</b></span>
-                    <div class="row form-group">
-                        <label class="col-md-4 control-label">Nombre De Pila</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-4 control-label">Apellido</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-4 control-label">Fecha Nacimiento</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-4 control-label">Genero</label>
-                        <div class="col-md-6">
-                        <select name="Male" class="form-control">
-                            <option value="">Hombre</option>
-                            <option value="">Mujer</option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-4 control-label">Altura</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-4 control-label">Peso</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-md-offset-8 col-md-2">
-                            <button id="btnSubmit" type="submit" class="btn button-custom pull-right" style="background-color: #B6DB49; color: white"><b>actualización</b></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row form-group">
-                    <div class="col-md-12"></div>
-                </div>
-            <div class="row form-group">
-                <div class="col-md-8 general_update" style="position: relative;">
-                    <span style="padding: 5px; font-size: 20px; color: #B6DB49; background-color: white; position: absolute; top: -20px; left: 20px;"><b>Enfermedades</b></span>
-                    <div class="row form-group">
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Colesterol</span>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Colon irritable</span>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Diabetes</span>
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Hipertension</span>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Obesidad</span>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Trigliceridos</span>
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Colesterol</span>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Colon irritable</span>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="checkbox"><span class="checkbox_style">Diabetes</span>
-                        </div>
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="row form-group"></div>
+                <div class="outer_box">
                     <div class="row">
-                        <div class="col-md-offset-8 col-md-2">
-                            <button id="btnSubmit" type="submit" class="btn button-custom pull-right" style="background-color: #B6DB49; color: white"><b>actualización</b></button>
+                        <div class="col-md-offset-2 col-md-0">
+                            <div id='cssmenu'>
+
+                                <ul class="col-md-offset-1 col-md-10">
+                                    <li class='active'><a href='#' class="menu-image"><img class="" src="resources/images/menu-1.png" height="30" width="30"><span class="gap">Alimentos</span></a></li>
+                                    <li><a href='#' class="menu-image"><img class="" src="resources/images/menu-2.png" height="30" width="30"><span class="gap">Aditivos</span></a></li>
+                                    <li><a href='#' class="menu-image"><img class="" src="resources/images/menu-3.png" height="30" width="30"><span class="gap">Tips</span></a></li>
+                                    <li><a href='#' class="menu-image"><img class="" src="resources/images/menu-4.png" height="30" width="30"><span class="gap">Ayuda</span></a></li>
+                                    <li><a href='#' class="menu-image"><img class="" src="resources/images/menu-5.png" height="30" width="30"><span class="gap">Info Usario</span></a></li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+                <div class="row form-group"></div>
+                <div class="row form-group"></div>
+                <div class="row form-group"></div>
+                <form class="form-horizontal">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 general_update" style="position: relative">
+
+                        <span style="padding: 5px; font-size: 20px; color: #B6DB49; background-color: white; position: absolute; top: -20px; left: 20px;"><b>General</b></span>
+                        <div class="row form-group">
+                            <label class="col-md-4 control-label">Nombre De Pila</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4 control-label">Apellido</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4 control-label">Fecha Nacimiento</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4 control-label">Genero</label>
+                            <div class="col-md-6">
+                                <select name="Male" class="form-control">
+                                    <option value="">Hombre</option>
+                                    <option value="">Mujer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4 control-label">Altura</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4 control-label">Peso</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-offset-8 col-md-2">
+                                <button id="btnSubmit" type="submit" class="btn button-custom pull-right" style="background-color: #B6DB49; color: white"><b>actualización</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+                <div class="row form-group"></div>
+                <div class="row form-group"></div>
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 general_update" style="position: relative">
+                        
+                        <span style="padding: 5px; font-size: 20px; color: #B6DB49; background-color: white; position: absolute; top: -20px; left: 20px;"><b>Enfermedades</b></span>
+                        <div class="row form-group"></div>
+                        <div class="col-md-offset-1 col-md-10 form-group">
+                            <div class="row form-group">
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Colesterol</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Colon irritable</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Diabetes</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Hipertension</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Obesidad</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Trigliceridos</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Colesterol</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Colon irritable</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox"><span class="checkbox_style">Diabetes</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-offset-8 col-md-2">
+                                <button id="btnSubmit" type="submit" class="btn button-custom pull-right" style="background-color: #B6DB49; color: white"><b>actualización</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group"></div>
             </div>
         </div>
     </body>
